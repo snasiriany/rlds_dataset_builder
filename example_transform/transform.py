@@ -68,7 +68,10 @@ def transform_step(step: Dict[str, Any]) -> Dict[str, Any]:
             'image': np.array(img),
         },
         'action': np.concatenate(
-            [step['action'][:3], step['action'][5:8], step['action'][-2:]]),
+            [
+                np.clip(step['action'][:], a_min=-1, a_max=1),
+                np.array([step['is_last']], dtype=np.float32)
+            ]),
     }
 
     # copy over all other fields unchanged
