@@ -72,9 +72,7 @@ class Sailor(tfds.core.GeneratorBasedBuilder):
                     ),
                     'reward': tfds.features.Scalar(
                         dtype=np.float32,
-                        doc='Reward if pro1es.Scalar(
-                        dtype=np.bool_,
-                        doc='True on last step of the episode.'
+                        doc='Reward if provided, 1 on final step for demos.'
                     ),
                     'is_terminal': tfds.features.Scalar(
                         dtype=np.bool_,
