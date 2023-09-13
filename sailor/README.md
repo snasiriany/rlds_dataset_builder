@@ -20,3 +20,5 @@ and yaw of the end effector, which combined with the gripper controller results 
 action space. For observations, the agent has access to proprioceptive information consisting of
 the robot end effector pose and gripper state, in addition to RGB images from a third-person view
 camera and an eye-in-hand camera.
+
+Link to dataset: https://utexas.box.com/s/n8wdjut9tluwq3kqq2yu515v8r45ivfc
