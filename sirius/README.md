@@ -10,3 +10,5 @@ We label each timestep of data according to the action mode (initial demo, robot
 Additionally, the `intv_label` key labels the 15 timesteps preceding human intervention as 
 "pre-interventions" which represent abnormal states that should be avoided. In Sirius, we utilize an intervention-guided imitation learning algorithm, where we assign higher weights to intervention
 and lower weights to pre-intervention states.
+
+Link to dataset: https://utexas.app.box.com/s/htjpowji1ynukkzge0wz50p1lmtbo0m4
